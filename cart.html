@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>APF Records :: Shopping Cart</title>
+
+    <link href="style/main.css" rel="stylesheet">
+    <link href="style/cart.css" rel="stylesheet">
+    <script defer src="script/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><img src="images/apf-logo.png" alt="APF records logo"></h1>
+    </header>
+    <nav>
+      <div class="toggle"><button>Menu</button></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bands.html">Bands</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cart">Cart <img src="images/icons/shopping-cart-icon.png" alt=""></li>
+        <li class="search"><form>
+              <img src="images/icons/search-icon.png" alt="search icon">
+              <input type="search" aria-label="search the APF records catalog">
+              <button>Search</button>
+            </form></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="body-content">
+        <h2>Your shopping cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><p>Mastiff - BORK (Special Edition LP) <button>Remove</button></p> <img src="images/catalog/mastiff/bork/cover-thumb.jpg" alt="Mastiff bork album cover"></td>
+              <td><input type="number" aria-label="Quantity of Mastiff - BORK (Special Edition LP)" value="1" min="0"></td>
+              <td><p>15</p></td>
+            </tr>
+            <tr>
+              <td><p>Nomad - Feral (CD) <button>Remove</button></p> <img src="images/catalog/nomad/feral/cover-thumb.jpg" alt="Nomad feral album cover"></td>
+              <td><input type="number" aria-label="Quantity of Nomad - Feral (CD)" value="1" min="0"></td>
+              <td><p>10</p></td>
+            </tr>
+            <tr>
+              <td><p>Possessor - Gravelands (T-Shirt & CD Bundle <button>Remove</button></p> <img src="images/catalog/possessor/gravelands-bundle/tshirt-thumb.jpg" alt="Posessor gravelands t-shirt cover"></td>
+              <td><input type="number" aria-label="Quantity of Possessor - Gravelands (T-Shirt & CD Bundle)" value="1" min="0"></td>
+              <td><p>25</p></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Total</th>
+              <td><p>50</p></td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p><a href="checkout.html"><button>Checkout</button></a></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2019 APF Records</p>
+      <p class="social">
+        <a href="https://twitter.com/APF_Records"><img src="images/icons/twitter-icon.png" alt="Twitter"></a>
+        <a href="http://facebook.com/apfrecords"><img src="images/icons/facebook-icon.png" alt="Facebook"></a>
+        <a href="http://instagram.com/apfrecords"><img src="images/icons/instagram-icon.png" alt="Instagram"></a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+/* Minimal form reset, as suggested by Rachel Andrew */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+/* General styles */
+
+form  {
+  font-size:  1.5rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+fieldset {
+  margin-bottom: 40px;
+  padding: 40px 20px;
+  width: 70%;
+  min-width: 420px;
+  max-width: 900px;
+}
+
+legend {
+  color: black;
+  background-color: #ccc;
+  padding: 5px 20px;
+  text-shadow: 1px 1px 3px black;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+label {
+  margin-right: 20px;
+  max-width: 150px;
+  width: 40%;
+  text-align: right;
+}
+
+input {
+  flex: 1;
+  background: linear-gradient(to bottom, white, white 40%, #ccc);
+  padding: 5px;
+}
+
+input:focus {
+  box-shadow: inset 1px 1px 5px black;
+}
+
+input[type="submit"] {
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+fieldset div:last-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+@media(max-width: 650px) {
+  fieldset {
+    width: 95%;
+  }
+
+  input[type="submit"] {
+    width: 80%;
+  }
+}

@@ -1,0 +1,402 @@
+/* fonts */
+
+/* main headings */
+
+@font-face {
+  font-family: "psygnotic";
+  src: url("../fonts/psygnotic.ttf");
+}
+
+/* body copy */
+
+@font-face {
+  font-family: "marvel";
+  src: url("../fonts/marvel.ttf");
+}
+
+/* Typography */
+
+h2 {
+  font-family: psygnotic, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+h3, p, li, button, table, form {
+  font-family: marvel, sans-serif;
+}
+
+/* general layout and style */
+
+html {
+  background-image: linear-gradient(to right, #222, black 10%, black 90%, #222);
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1280px;
+  min-width: 360px;
+}
+
+img, iframe, video {
+  max-width: 70%;
+}
+
+img {
+  height: auto;
+}
+
+/* general link styling */
+
+a {
+  text-decoration: none;
+  color: #999;
+  transition: color 0.4s;
+}
+
+a:hover, a:focus {
+  color: #ccc;
+}
+
+a:active {
+  color: #ddd;
+}
+
+/* header layout */
+
+header {
+  padding: 40px 0 10px;
+  background: linear-gradient(to top, black, transparent 25%), url('../images/header-trees-edited.jpg') center;
+  /* header image by bellamandolina - https://www.flickr.com/photos/bellamandolina/25284472277/ */
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 4rem;
+}
+
+/* nav layout */
+
+nav {
+  margin: 3rem 0;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  flex: 1 100px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  line-height: 3rem;
+  text-align: center;
+}
+
+nav li.cart {
+  flex: 1 160px;
+}
+
+nav li.cart img {
+  height: 16px;
+}
+
+nav li.search {
+  display: flex;
+  justify-content: center;
+}
+
+nav li input {
+  padding: 5px;
+  line-height: 1rem;
+  -webkit-appearance: none;
+}
+
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav form * {
+  margin-right: 10px;
+}
+
+nav form *:last-child {
+  margin-right: 0;
+}
+
+nav form img {
+  height: 26px;
+  max-width: none;
+}
+
+nav form button, .body-content button {
+  height: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 0 10px;
+}
+
+/* menu button that displays the menu in the mobile version */
+
+.toggle {
+  display: none;
+  margin: 0 20px;
+  background-image: url(../images/icons/menu-icon.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 7% 60%;
+  cursor: pointer;
+  outline: none;
+}
+
+.toggle > button {
+  border: 0;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 0;
+  background: none;
+  color: #999;
+  transition: color 0.4s;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+.toggle > button:hover, .toggle > button:focus {
+  color: #ccc;
+  outline: none;
+}
+
+.toggle > button:active {
+  color: #ddd;
+}
+
+/* main content layout */
+
+main {
+  display: flex;
+}
+
+.body-content {
+  flex: 4;
+  margin-right: 5%;
+  padding: 0 20px;
+}
+
+.latest {
+  flex: 3;
+}
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* news AND latest releases */
+
+.body-content img, .latest img {
+  display: block;
+  margin: 0 auto;
+}
+
+.latest article, .body-content article {
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px #222;
+}
+
+/* tiled layout for merch, videos, images, etc. */
+
+.tiled-layout {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tiled-layout article {
+  flex-basis: 150px;
+  margin: 0 5px 0 0;
+}
+
+.tiled-layout iframe {
+  flex-basis: 200px;
+  margin: 0 5px 5px 0;
+}
+
+.tiled-layout img {
+  max-width: 100%;
+}
+
+/* footer layout */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+  background: linear-gradient(to bottom, black, transparent), url('../images/header-trees-edited.jpg') center;
+}
+
+footer p {
+  line-height: 2;
+}
+
+footer img {
+  display: block;
+  height: 26px;
+}
+
+footer p.social {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* narrow-ish layout, search form brought onto next line */
+
+@media(max-width: 1060px) {
+  nav li form {
+    width: 70%;
+  }
+
+  nav li input {
+    width: 70%;
+  }
+
+  nav li.search {
+    flex: 1 350px;
+  }
+}
+
+/* main narrow desktop layout */
+
+@media(max-width: 960px) {
+  html {
+    background-image: none;
+    background-color: black;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img, iframe, video {
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  .latest {
+    flex: 4;
+  }
+}
+
+/* bump the cart link down onto the next line too */
+
+@media(max-width: 800px) {
+  nav li.cart {
+    flex: 1 250px;
+  }
+
+  nav li.search {
+    flex: 3 350px;
+  }
+
+  nav li input {
+    width: auto;
+  }
+}
+
+/* keep form and cart central even at lower width */
+
+@media(max-width: 700px) {
+  nav li.cart {
+    flex: 1 200px;
+  }
+
+  nav li.search {
+    flex: 3 350px;
+  }
+}
+
+/* narrow device/mobile layout */
+
+@media(max-width: 650px) {
+  main {
+    display: block;
+  }
+
+  nav {
+    padding: 0 0 4rem;
+    margin: 0;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    padding: 0 20px;
+  }
+
+  nav li {
+    text-align: left;
+  }
+
+  nav li.search {
+    display: block;
+    margin-top: 20px;
+  }
+
+  nav li form {
+    width: 100%;
+  }
+
+  nav li input {
+    width: 100%;
+  }
+}
