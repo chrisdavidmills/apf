@@ -57,8 +57,19 @@ img, iframe, video {
   max-width: 70%;
 }
 
+article img, iframe, video {
+  display: block;
+  margin: 0 auto;
+}
+
 img {
   height: auto;
+}
+
+/* bullshit instagram fix; by default iframe had min-width: 326px set on it, casuing it to spill out of narrow columns */
+
+[class*="instagram"] {
+  min-width: auto !important;
 }
 
 /* general link styling */
@@ -337,6 +348,10 @@ footer p.social {
 /* bump the cart link down onto the next line too */
 
 @media(max-width: 800px) {
+  main {
+    display: block;
+  }
+
   nav li.cart {
     flex: 1 250px;
   }
@@ -365,10 +380,6 @@ footer p.social {
 /* narrow device/mobile layout */
 
 @media(max-width: 650px) {
-  main {
-    display: block;
-  }
-
   nav {
     padding: 0 0 4rem;
     margin: 0;
