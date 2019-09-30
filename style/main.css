@@ -66,7 +66,7 @@ img {
   height: auto;
 }
 
-/* bullshit instagram fix; by default iframe had min-width: 326px set on it, casuing it to spill out of narrow columns */
+/* bullshit instagram fix; by default iframe had min-width: 326px set on it, causing it to spill out of narrow columns */
 
 [class*="instagram"] {
   min-width: auto !important;
