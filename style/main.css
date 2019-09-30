@@ -70,6 +70,13 @@ img {
 
 [class*="instagram"] {
   min-width: auto !important;
+  margin: 0 auto !important;
+}
+
+/* Another bullshit fix to center the twitter-widget element Twitter uses for their embeds */
+
+twitter-widget {
+  margin: 0 auto;
 }
 
 /* general link styling */
