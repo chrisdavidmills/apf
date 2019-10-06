@@ -111,8 +111,8 @@ h1 {
 /* nav layout */
 
 nav {
-  margin: 3rem 0;
-  padding: 0 20px;
+  margin: 0 0 2.5rem;
+  padding: 0.5rem 20px;
   background-color: black;
 }
 
@@ -224,7 +224,6 @@ main {
 .body-content {
   flex: 4;
   margin-right: 5%;
-  padding: 0 20px;
 }
 
 .latest {
