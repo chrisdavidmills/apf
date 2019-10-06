@@ -3,13 +3,15 @@
 const menuList = document.querySelector('nav ul');
 const menuToggle = document.querySelector('.toggle');
 
-// Test whether viewport width is less than 650px,
+// Test whether viewport width is less than 700px,
 // i.e. we are in the mobile view
 
 function checkViewport() {
   let mql = window.matchMedia('(max-width: 650px)');
   return mql.matches;
 }
+
+// Adjust menu to the mobile version if we are in mobile view
 
 if(checkViewport()) {
   menuList.style.height = '0px';
@@ -30,3 +32,26 @@ menuToggle.addEventListener('click', function() {
     menuList.style.height = '0px';
   }
 })
+
+// code to control the sticky nav logo showing and hiding
+
+if(!checkViewport()) {
+  const logoContainerElem = document.querySelector('#nav-logo');
+  const navElem = document.querySelector('nav');
+
+  // Set things up
+
+  window.addEventListener('scroll', handleMenuScroll);
+
+  function handleMenuScroll() {
+    let boundingBox = navElem.getBoundingClientRect();
+
+    if (boundingBox.y > 0) {
+      if(logoContainerElem.getAttribute('class')) {
+        logoContainerElem.setAttribute('class', 'shift-left');
+      }
+    } else {
+      logoContainerElem.setAttribute('class', 'shift-right');
+    }
+  }
+}

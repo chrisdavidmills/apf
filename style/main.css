@@ -73,7 +73,7 @@ img {
   margin: 0 auto !important;
 }
 
-/* Another bullshit fix to center the twitter-widget element Twitter uses for their embeds */
+/* Another bullshit fix to center the twitter-widget custom element Twitter uses for their embeds */
 
 twitter-widget {
   margin: 0 auto;
@@ -113,6 +113,7 @@ h1 {
 nav {
   margin: 3rem 0;
   padding: 0 20px;
+  background-color: black;
 }
 
 nav ul {
