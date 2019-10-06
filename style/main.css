@@ -237,6 +237,27 @@ main {
   justify-content: space-between;
 }
 
+/* Styling for the filter */
+
+.filter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.filter p {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+  flex: 1 45px;
+}
+
+.filter a  {
+  display: block;
+  
+}
+
 /* news AND latest releases */
 
 .body-content img, .latest img {
