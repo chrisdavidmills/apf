@@ -1,0 +1,66 @@
+/* sticky positioning for the nav bar */
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+#nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0px;
+  opacity: 0;
+}
+
+#nav-logo > img {
+  max-width: 100%;
+  height: 30px;
+}
+
+.shift-right {
+  animation: shift-right 0.4s 1 forwards linear;
+}
+
+.shift-left {
+  animation: shift-left 0.4s 1 forwards linear;
+}
+
+/* hide the nav logo on mobile */
+
+@media(max-width: 700px) {
+  #nav-logo {
+    height: 0;
+  }
+
+  #nav-logo > img {
+    height: 0;
+  }
+}
+
+/* animation for small logo */
+
+@keyframes shift-right {
+  from {
+      flex: 0 0px;
+      opacity: 0;
+  }
+
+  to {
+      flex: 0 60px;
+      opacity: 1;
+  }
+}
+
+@keyframes shift-left {
+  from {
+      flex: 0 60px;
+      opacity: 1;
+  }
+
+  to {
+      flex: 0 0px;
+      opacity: 0;
+  }
+}
