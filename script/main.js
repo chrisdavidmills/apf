@@ -35,10 +35,10 @@ menuToggle.addEventListener('click', function() {
 
 // code to control the sticky nav logo showing and hiding
 
-if(!checkViewport()) {
-  const logoContainerElem = document.querySelector('#nav-logo');
-  const navElem = document.querySelector('nav');
+const logoContainerElem = document.querySelector('#nav-logo');
+const navElem = document.querySelector('nav');
 
+if(!checkViewport()) {
   // Set things up
 
   window.addEventListener('scroll', handleMenuScroll);

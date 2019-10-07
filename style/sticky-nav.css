@@ -20,11 +20,11 @@ nav {
 }
 
 .shift-right {
-  animation: shift-right 0.4s 1 forwards linear;
+  animation: shift-right 0.4s linear 1 forwards;
 }
 
 .shift-left {
-  animation: shift-left 0.4s 1 forwards linear;
+  animation: shift-left 0.4s linear 1 forwards;
 }
 
 /* hide the nav logo on mobile */
