@@ -15,10 +15,13 @@ function addToCart() {
   popup.setAttribute('id', 'cart-popup');
   popup.textContent = 'Item Added to cart';
 
+  let popupRect = popup.getBoundingClientRect();
+
   if(!checkViewport()) {
-    popup.style.top =  cartNavItem.offsetTop + (cartNavItem.clientHeight/2) + 'px';
-    popup.style.left = cartNavItem.offsetLeft - (cartNavItem.clientWidth) + 20  + 'px';
+    popup.style.top = '20px';
+    popup.style.right = popupRect.width + 20 + 'px';
   } else {
+    popup.style.position = 'fixed';
     popup.style.top = '40px';
     popup.style.right = '10px';
   }
@@ -35,7 +38,7 @@ function addToCart() {
   if(cartItemCount < 10) {
     cartItemText.textContent = 'Cart [' + cartItemCount +']';
   } else {
-    cartItemText.textContent = 'Cart [9+]';
+    cartItemText.text.textContent = 'Cart [9+]';
   }
 
   setTimeout(function() {

@@ -121,7 +121,6 @@ nav ul {
   display: flex;
   flex-flow: row wrap;
   padding: 0;
-  overflow: hidden;
 }
 
 nav li {
@@ -135,6 +134,7 @@ nav li {
 
 nav li.cart {
   flex: 1 160px;
+  position: relative;
 }
 
 nav li.cart img {
@@ -301,7 +301,7 @@ main {
 /* Styling for add to cart popup dialog box */
 
 #cart-popup {
-  position: fixed;
+  position: absolute;
   font-size: 1.5rem;
   line-height: 2;
   text-transform: uppercase;
@@ -471,7 +471,7 @@ footer p.social {
 
 @media(max-width: 650px) {
   nav {
-    padding: 1rem 0 4rem;
+    padding: 1rem 0 0;
     margin: 0;
   }
 
@@ -482,6 +482,7 @@ footer p.social {
   nav ul {
     display: block;
     padding: 0 20px;
+    overflow: hidden;
   }
 
   nav li {
