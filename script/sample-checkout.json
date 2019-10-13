@@ -1,0 +1,134 @@
+{
+  "uk": {
+    "name": "United Kingdom",
+    "postageOptions": [
+      {
+        "id": "0001",
+        "name": "Standard Delivery",
+        "price": 3,
+        "minItems": 1,
+        "maxItems": 3
+      },
+      {
+        "id": "0002",
+        "name": "Large Delivery",
+        "price": 5,
+        "minItems": 4,
+        "maxItems": 10
+      },
+      {
+        "id": "0003",
+        "name": "Express Delivery",
+        "price": 6,
+        "minItems": 1,
+        "maxItems": 3
+      },
+      {
+        "id": "0004",
+        "name": "Large Express Delivery",
+        "price": 10,
+        "minItems": 4,
+        "maxItems": 10
+      }
+    ]
+  },
+  "eu": {
+    "name": "Europe",
+    "postageOptions": [
+      {
+        "id": "0101",
+        "name": "Standard Delivery",
+        "price": 4,
+        "minItems": 1,
+        "maxItems": 3
+      },
+      {
+        "id": "0102",
+        "name": "Large Delivery",
+        "price": 6,
+        "minItems": 4,
+        "maxItems": 10
+      },
+      {
+        "id": "0103",
+        "name": "Express Delivery",
+        "price": 8,
+        "minItems": 1,
+        "maxItems": 3
+      },
+      {
+        "id": "0104",
+        "name": "Large Express Delivery",
+        "price": 12,
+        "minItems": 4,
+        "maxItems": 10
+      }
+    ]
+  },
+  "us": {
+    "name": "USA",
+    "postageOptions": [
+      {
+        "id": "0201",
+        "name": "Standard Delivery",
+        "price": 5,
+        "minItems": 1,
+        "maxItems": 3
+      },
+      {
+        "id": "0202",
+        "name": "Large Delivery",
+        "price": 7,
+        "minItems": 4,
+        "maxItems": 10
+      },
+      {
+        "id": "0203",
+        "name": "Express Delivery",
+        "price": 9,
+        "minItems": 1,
+        "maxItems": 3
+      },
+      {
+        "id": "0204",
+        "name": "Large Express Delivery",
+        "price": 14,
+        "minItems": 4,
+        "maxItems": 10
+      }
+    ]
+  },
+  "row": {
+    "name": "Rest of World",
+    "postageOptions": [
+      {
+        "id": "0301",
+        "name": "Standard Delivery",
+        "price": 6,
+        "minItems": 1,
+        "maxItems": 3
+      },
+      {
+        "id": "0302",
+        "name": "Large Delivery",
+        "price": 10,
+        "minItems": 4,
+        "maxItems": 10
+      },
+      {
+        "id": "0303",
+        "name": "Express Delivery",
+        "price": 15,
+        "minItems": 1,
+        "maxItems": 3
+      },
+      {
+        "id": "0304",
+        "name": "Large Express Delivery",
+        "price": 20,
+        "minItems": 4,
+        "maxItems": 10
+      }
+    ]
+  }
+}

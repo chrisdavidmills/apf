@@ -14,7 +14,7 @@ textarea {
   overflow: auto;
 }
 
-/* General styles */
+/* General form styles */
 
 form  {
   font-size:  1.5rem;
@@ -42,7 +42,7 @@ fieldset div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 label {
@@ -52,7 +52,7 @@ label {
   text-align: right;
 }
 
-input {
+input, select {
   flex: 1;
   background: linear-gradient(to bottom, white, white 40%, #ccc);
   padding: 5px;
@@ -73,12 +73,57 @@ fieldset div:last-child {
   margin-bottom: 0;
 }
 
-@media(max-width: 650px) {
-  fieldset {
-    width: 95%;
+/* styling the items list */
+
+section ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+section img {
+  width: 75px;
+  height: 75px;
+  flex: 0 auto;
+  padding-right: 30px;
+}
+
+section div {
+  flex: 1;
+}
+
+section ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.total, .postage-cost {
+  justify-content: flex-start;
+  padding-left: 105px;
+}
+
+.price:before, .total span:before, .postage-cost span:before {
+  content: "£";
+  font-size: 1.2rem;
+}
+
+
+/* narrow screen adjustments */
+
+@media(max-width: 800px) {
+  fieldset, section ul {
+    width: 90%;
+  }
+
+  section ul {
+    margin: 0 auto;
   }
 
   input[type="submit"] {
     width: 80%;
+  }
+
+  .body-content {
+    margin-right: 0;
   }
 }
