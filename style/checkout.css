@@ -75,23 +75,23 @@ fieldset div:last-child {
 
 /* styling the items list */
 
-section ul {
+.latest ul {
   padding-left: 0;
   list-style-type: none;
 }
 
-section img {
+.latest img {
   width: 75px;
   height: 75px;
   flex: 0 auto;
   padding-right: 30px;
 }
 
-section div {
+.latest div {
   flex: 1;
 }
 
-section ul li {
+.latest ul li {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -115,7 +115,7 @@ section ul li {
     width: 90%;
   }
 
-  section ul {
+  .latest ul {
     margin: 0 auto;
   }
 
