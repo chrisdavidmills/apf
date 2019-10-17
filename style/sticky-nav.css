@@ -11,8 +11,9 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0px;
+  flex: none;
   opacity: 0;
+  width: 0;
 }
 
 #nav-logo > img {
@@ -44,24 +45,24 @@ nav {
 
 @keyframes shift-right {
   from {
-      flex: 0 0px;
+      width: 0px;
       opacity: 0;
   }
 
   to {
-      flex: 0 60px;
+      width: 60px;
       opacity: 1;
   }
 }
 
 @keyframes shift-left {
   from {
-      flex: 0 60px;
+      width: 60px;
       opacity: 1;
   }
 
   to {
-      flex: 0 0px;
+      width: 0px;
       opacity: 0;
   }
 }
