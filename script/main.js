@@ -45,8 +45,8 @@ if(!checkViewport()) {
 
   function handleMenuScroll() {
     let boundingBox = navElem.getBoundingClientRect();
-
-    if (boundingBox.y > 0) {
+    // needs to be top, as IE/Edge don't support x/y
+    if (boundingBox.top > 0) {
       if(logoContainerElem.getAttribute('class')) {
         logoContainerElem.setAttribute('class', 'shift-left');
       }
