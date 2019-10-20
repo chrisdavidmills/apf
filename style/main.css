@@ -45,7 +45,8 @@ h3 {
 
 p, li {
     font-size: 1.3rem;
-    line-height: 2;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
 h3, p, li, button, table, form {
@@ -76,6 +77,10 @@ article img, iframe, video {
     margin: 0 auto;
 }
 
+iframe {
+  margin-bottom: 20px;
+}
+
 img {
     height: auto;
 }
@@ -101,13 +106,13 @@ a {
     transition: color 0.4s;
 }
 
-    a:hover, a:focus {
-        color: #ccc;
-    }
+a:hover, a:focus {
+    color: #ccc;
+}
 
-    a:active {
-        color: #ddd;
-    }
+a:active {
+    color: #ddd;
+}
 
 /* header layout */
 
@@ -130,67 +135,71 @@ nav {
     background-color: black;
 }
 
-    nav ul {
-        list-style-type: none;
-        display: flex;
-        flex-flow: row wrap;
-        padding: 0;
-        overflow: hidden;
-    }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    overflow: hidden;
+}
 
-    nav li {
-        flex: 1 100px;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        letter-spacing: 4px;
-        line-height: 3rem;
-        text-align: center;
-    }
+nav li {
+    flex: 1 100px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    line-height: 3rem;
+    text-align: center;
+}
 
-        nav li.cart {
-            flex: 1 160px;
-        }
+nav li.cart {
+    flex: 1 160px;
+}
 
-            nav li.cart img {
-                height: 16px;
-            }
+nav li.cart img {
+    height: 16px;
+}
 
-        nav li.search {
-            display: flex;
-            justify-content: center;
-        }
+nav li.search {
+    display: flex;
+    justify-content: center;
+}
 
-        nav li input {
-            padding: 5px;
-            line-height: 1rem;
-            -webkit-appearance: none;
-        }
+nav li input {
+    padding: 5px;
+    line-height: 1rem;
+    -webkit-appearance: none;
+}
 
-    nav form {
-        display: flex;
-        align-items: center;
-    }
+nav form {
+    display: flex;
+    align-items: center;
+}
 
-        nav form * {
-            margin-right: 10px;
-        }
+nav form * {
+    margin-right: 10px;
+}
 
-            nav form *:last-child {
-                margin-right: 0;
-            }
+nav form *:last-child {
+    margin-right: 0;
+}
 
-        nav form img {
-            height: 26px;
-            max-width: none;
-        }
+nav form img {
+    height: 26px;
+    max-width: none;
+}
 
-        nav form button, .body-content button {
-            height: 30px;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            padding: 0 10px;
-        }
+nav form button, .body-content button, .latest button {
+    height: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 0 10px;
+}
+
+nav form button {
+  width: 30%;
+}
 
 /* menu button that displays the menu in the mobile version */
 
@@ -205,39 +214,40 @@ nav {
     outline: none;
 }
 
-    .toggle > button {
-        border: 0;
-        width: 100%;
-        text-align: left;
-        text-transform: uppercase;
-        padding-left: 0;
-        background: none;
-        color: #999;
-        transition: color 0.4s;
-        font-size: 1.5rem;
-        letter-spacing: 4px;
-        line-height: 3rem;
-        cursor: pointer;
-    }
+.toggle > button {
+    border: 0;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 0;
+    background: none;
+    color: #999;
+    transition: color 0.4s;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    line-height: 3rem;
+    cursor: pointer;
+}
 
-        .toggle > button:hover, .toggle > button:focus {
-            color: #ccc;
-            outline: none;
-        }
+.toggle > button:hover, .toggle > button:focus {
+    color: #ccc;
+    outline: none;
+}
 
-        .toggle > button:active {
-            color: #ddd;
-        }
+.toggle > button:active {
+    color: #ddd;
+}
 
 /* main content layout */
 
 main {
     display: flex;
+    margin: 0 20px;
 }
 
 .body-content {
     flex: 4;
-    margin-right: 5%;
+    margin-right: 1%;
 }
 
 .latest {
@@ -256,20 +266,19 @@ main {
 .filter {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    padding: 10px;
 }
 
-    .filter p {
-        text-align: center;
-        margin: 0;
-        font-size: 2rem;
-        flex: 1 45px;
-    }
+.filter p {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    flex: 0 45px;
+    margin: 0 10px;
+}
 
-    .filter a {
-        display: block;
-    }
+.filter a {
+    display: block;
+}
 
 /* news AND latest releases */
 
@@ -279,7 +288,7 @@ main {
 }
 
 .latest article, .body-content article {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 40px #222;
@@ -287,7 +296,7 @@ main {
 
 .body-content p, .body-content button {
     display: block;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 /* tiled layout for merch, videos, images, etc. */
@@ -297,19 +306,19 @@ main {
     flex-flow: row wrap;
 }
 
-    .tiled-layout article {
-        flex-basis: 150px;
-        margin: 0 5px 0 0;
-    }
+.tiled-layout article {
+    flex-basis: 150px;
+    margin: 0 5px 0 0;
+}
 
-    .tiled-layout iframe {
-        flex-basis: 200px;
-        margin: 0 5px 5px 0;
-    }
+.tiled-layout iframe {
+    flex-basis: 200px;
+    margin: 0 5px 5px 0;
+}
 
-    .tiled-layout img {
-        max-width: 100%;
-    }
+.tiled-layout img {
+    max-width: 100%;
+}
 
 
 @keyframes appear {
@@ -342,20 +351,20 @@ footer {
     background: linear-gradient(to bottom, black, transparent), url('../images/header-trees-edited.jpg') center;
 }
 
-    footer p {
-        line-height: 2;
-    }
+footer p {
+    line-height: 2;
+}
 
-    footer img {
-        display: block;
-    }
+footer img {
+    display: block;
+}
 
-    footer p.social {
-        width: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+footer p.social {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* narrow-ish layout, search form brought onto next line */
 
@@ -389,6 +398,10 @@ footer {
         max-width: 90%;
     }
 
+    footer img {
+      max-width: 70%;
+    }
+
     h2 {
         font-size: 2rem;
     }
@@ -415,8 +428,12 @@ footer {
 
 @media(max-width: 650px) {
     nav {
-        padding: 1rem 0 4rem;
+        padding: 1rem 0 0 0;
         margin: 0;
+    }
+
+    main {
+      display: block;
     }
 
     .toggle {
@@ -432,16 +449,20 @@ footer {
         text-align: left;
     }
 
-        nav li.search {
-            display: block;
-            margin-top: 20px;
-        }
+    nav li.search {
+        display: block;
+        margin: 20px 0;
+    }
 
-        nav li form {
-            width: 100%;
-        }
+    nav li form {
+        width: 100%;
+    }
 
-        nav li input {
-            width: 100%;
-        }
+    nav li input {
+        width: 100%;
+    }
+
+    .body-content {
+        margin-right: 0;
+    }
 }

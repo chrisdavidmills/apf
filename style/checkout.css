@@ -80,26 +80,29 @@ fieldset div:last-child {
   list-style-type: none;
 }
 
-.latest img {
-  width: 75px;
-  height: 75px;
-  flex: 0 auto;
-  padding-right: 30px;
-}
-
-.latest div {
-  flex: 1;
-}
-
 .latest ul li {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
-.total, .postage-cost {
-  justify-content: flex-start;
-  padding-left: 105px;
+.latest img {
+  width: 75px;
+  height: 75px;
+  max-width: 100%;
+}
+
+.latest li p:nth-child(1) {
+  width: 75px;
+  margin-right: 20px;
+}
+
+.latest li p:nth-child(2) {
+  flex: 1;
+}
+
+.latest li p:nth-child(3) {
+  width: 30px;
+  margin-left: 20px;
 }
 
 .price:before, .total span:before, .postage-cost span:before {
