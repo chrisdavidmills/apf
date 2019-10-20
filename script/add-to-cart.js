@@ -13,7 +13,7 @@ for(let i = 0; i < cartBtns.length; i++) {
 function addToCart() {
   notification.textContent = 'Item Added to cart';
 
-  notification.setAttribute('class', 'error appear');
+  notification.setAttribute('class', 'success appear');
   cartItemCount++;
 
   for(let i = 0; i < cartBtns.length; i++) {
@@ -27,6 +27,6 @@ function addToCart() {
       cartBtns[i].disabled = false;
     }
 
-    notification.setAttribute('class', 'error disappear');
+    notification.setAttribute('class', 'success disappear');
   }, 3000);
 }
