@@ -264,20 +264,17 @@ main {
 /* Styling for the filter */
 
 .filter {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.filter p {
     text-align: center;
-    margin: 0;
-    font-size: 2rem;
-    flex: 0 45px;
-    margin: 0 10px;
 }
 
-.filter a {
-    display: block;
+.filter select {
+  background: linear-gradient(to bottom, white, white 40%,#ccc);
+  padding: 5px;
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  margin: 20px 0;
 }
 
 /* news AND latest releases */
