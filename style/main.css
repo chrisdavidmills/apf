@@ -411,38 +411,6 @@ footer {
     }
 }
 
-/* bump the cart link down onto the next line too */
-
-@media(max-width: 800px) {
-    main {
-        display: block;
-    }
-
-    nav li.cart {
-        flex: 1 250px;
-    }
-
-    nav li.search {
-        flex: 3 350px;
-    }
-
-    nav li input {
-        width: auto;
-    }
-}
-
-/* keep form and cart central even at lower width */
-
-@media(max-width: 700px) {
-    nav li.cart {
-        flex: 1 200px;
-    }
-
-    nav li.search {
-        flex: 3 350px;
-    }
-}
-
 /* narrow device/mobile layout */
 
 @media(max-width: 650px) {
