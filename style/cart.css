@@ -83,7 +83,7 @@ tr td:nth-of-type(3) p:before, #total p:before {
         min-width: 610px;
     }
 
-    .body-content {
+    .cart-container {
         overflow-x: scroll;
     }
 }

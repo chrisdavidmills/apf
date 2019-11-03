@@ -35,41 +35,44 @@
     <main>
       <section class="body-content">
         <h2>Your shopping cart</h2>
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Item</th>
-              <th scope="col">Quantity</th>
-              <th scope="col">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><img src="images/catalog/mastiff/bork/cover-thumb.jpg" alt="Mastiff bork album cover"><p>Mastiff - BORK (Special Edition LP)</p></td>
-              <td><input type="number" aria-label="Quantity of Mastiff - BORK (Special Edition LP)" value="1" min="0"></td>
-              <td><p>15</p></td>
-              <td><button>Remove</button></td>
-            </tr>
-            <tr>
-              <td><img src="images/catalog/nomad/feral/cover-thumb.jpg" alt="Nomad feral album cover"><p>Nomad - Feral (CD)</p></td>
-              <td><input type="number" aria-label="Quantity of Nomad - Feral (CD)" value="1" min="0"></td>
-              <td><p>10</p></td>
-              <td><button>Remove</button></td>
-            </tr>
-            <tr>
-              <td><img src="images/catalog/possessor/gravelands-bundle/tshirt-thumb.jpg" alt="Posessor gravelands t-shirt cover"><p>Possessor - Gravelands (T-Shirt & CD Bundle</p></td>
-              <td><input type="number" aria-label="Quantity of Possessor - Gravelands (T-Shirt & CD Bundle)" value="1" min="0"></td>
-              <td><p>25</p></td>
-              <td><button>Remove</button></td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th scope="row" colspan="2">Total</th>
-              <td id="total"><p>50</p></td>
-            </tr>
-          </tfoot>
-        </table>
+
+        <div class="cart-container">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="images/catalog/mastiff/bork/cover-thumb.jpg" alt="Mastiff bork album cover"><p>Mastiff - BORK (Special Edition LP)</p></td>
+                <td><input type="number" aria-label="Quantity of Mastiff - BORK (Special Edition LP)" value="1" min="0"></td>
+                <td><p>15</p></td>
+                <td><button>Remove</button></td>
+              </tr>
+              <tr>
+                <td><img src="images/catalog/nomad/feral/cover-thumb.jpg" alt="Nomad feral album cover"><p>Nomad - Feral (CD)</p></td>
+                <td><input type="number" aria-label="Quantity of Nomad - Feral (CD)" value="1" min="0"></td>
+                <td><p>10</p></td>
+                <td><button>Remove</button></td>
+              </tr>
+              <tr>
+                <td><img src="images/catalog/possessor/gravelands-bundle/tshirt-thumb.jpg" alt="Posessor gravelands t-shirt cover"><p>Possessor - Gravelands (T-Shirt & CD Bundle</p></td>
+                <td><input type="number" aria-label="Quantity of Possessor - Gravelands (T-Shirt & CD Bundle)" value="1" min="0"></td>
+                <td><p>25</p></td>
+                <td><button>Remove</button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2">Total</th>
+                <td id="total"><p>50</p></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
 
         <p><a href="checkout.html"><button>Checkout</button></a></p>
       </section>
