@@ -29,11 +29,11 @@
 }
 
 .appear {
-    animation: appear 0.6s linear 1 forwards;
+    animation: appear 0.4s linear 1 forwards;
 }
 
 .disappear {
-    animation: disappear 0.6s linear 1 forwards;
+    animation: disappear 0.4s linear 1 forwards;
 }
 
 @keyframes appear {

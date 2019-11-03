@@ -28,5 +28,5 @@ function addToCart() {
     }
 
     notification.setAttribute('class', 'success disappear');
-  }, 3000);
+  }, 1500);
 }
