@@ -24,7 +24,7 @@ form  {
 }
 
 fieldset {
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   padding: 40px 20px;
   width: 70%;
   min-width: 420px;
@@ -108,6 +108,21 @@ fieldset div:last-child {
 .price:before, .total span:before, .postage-cost span:before {
   content: "£";
   font-size: 1.2rem;
+}
+
+/* Hack the payment buttons  */
+
+#paymentButtons {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#paymentButtons p, #paymentButtons button {
+  margin: 20px 0;
+}
+
+.paypal-button {
+  height: 50px !important;
 }
 
 
