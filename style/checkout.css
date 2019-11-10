@@ -55,6 +55,7 @@ input, select {
   flex: 1;
   background: linear-gradient(to bottom, white, white 40%, #ccc);
   padding: 5px;
+  width: 40%;
 }
 
 input:focus {
@@ -129,11 +130,15 @@ fieldset div:last-child {
 
 @media(max-width: 800px) {
   fieldset, section ul {
-    width: 90%;
+    width: 85%;
   }
 
   .latest ul {
     margin: 0 auto;
+  }
+
+  label {
+    width: 35%;
   }
 
   input[type="submit"] {
