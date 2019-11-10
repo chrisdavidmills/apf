@@ -52,7 +52,7 @@ label {
 }
 
 input, select {
-  flex: 1;
+  flex: auto;
   background: linear-gradient(to bottom, white, white 40%, #ccc);
   padding: 5px;
   width: 40%;
